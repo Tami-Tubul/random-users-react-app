@@ -1,0 +1,65 @@
+#users-table {
+    width: 100%;
+}
+
+#users-table thead {
+    border-top: 5px dotted black;
+}
+
+#users-table th:not(:empty) {
+    border: 1px solid black;
+}
+
+#filter-section {
+    float: right;
+    margin-bottom: 10px;
+
+}
+
+#filter-section select {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+}
+
+#filter-section button {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(113, 185, 230);
+    border-color: rgb(171, 234, 241);
+}
+
+#pagination {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 13px;
+}
+
+.page-item {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.page-item.active {
+    background-color: rgb(113, 185, 230);
+}
+
+#loading-text {
+    position: absolute;
+}
+
+#overlay:has(~#user-modal) {
+    opacity: 0.5;
+    pointer-events: none;  /* cannot click at the overlay when the modal is open */
+}
+
+#overlay:not(:has(~#user-modal)) {
+    opacity: 1;
+}

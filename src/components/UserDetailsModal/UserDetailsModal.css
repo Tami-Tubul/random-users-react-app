@@ -1,0 +1,47 @@
+#user-modal {
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 70%;
+    border: 1px solid black;
+    transform: translate(45%, 10%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+
+}
+
+#user-modal .close-modal {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#user-modal .modal-container{
+    margin-top: 30px;
+}
+
+#user-modal .row-icon-user i {
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#user-modal .row {
+    display: flex;
+}
+
+#user-modal .row div {
+    flex: 1;
+    margin: 10px 20px;  
+}
+
+#user-modal .row div .heading {
+    display: block;
+    border: 1px solid black;
+}
